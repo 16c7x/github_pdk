@@ -31,8 +31,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: look-see
-        run: cat manifests/init.pp
-
       - name: pdk-validate
         run: pdk validate
+
+      - name: pdk-test-unit
+        run: pdk test unit
