@@ -31,5 +31,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: look-see
+        run: ls -la
+
       - name: pdk-validate
         run: pdk validate
