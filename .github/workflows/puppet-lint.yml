@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: look-see
-        run: ls -la
+        run: cat manifests/init.pp
 
       - name: pdk-validate
         run: pdk validate
