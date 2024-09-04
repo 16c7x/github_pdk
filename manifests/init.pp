@@ -5,4 +5,7 @@
 # @example
 #   include github_pdk
 class github_pdk {
+  file { '/etc/conf.conf' :
+    ensure => file,
+  
 }
