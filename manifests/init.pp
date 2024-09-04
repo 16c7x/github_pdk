@@ -7,5 +7,5 @@
 class github_pdk {
   file { '/etc/conf.conf' :
     ensure => file,
-  
+  }
 }
