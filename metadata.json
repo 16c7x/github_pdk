@@ -9,20 +9,12 @@
 
   ],
   "operatingsystem_support": [
-   # {
-   #   "operatingsystem": "windows",
-   #   "operatingsystemrelease": [
-   #     "2019",
-   #     "10"
-   #   ]
-   # },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
         "18.04"
       ]
     }
-
   ],
   "requirements": [
     {
