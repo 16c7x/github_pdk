@@ -32,7 +32,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: pdk-validate
-        run: pdk validate
+        run: pdk validate --format=text:output.out;
+
+      - name: show pdk vallidate results
+        run: cat output.out
 
       - name: pdk-test-unit
         run: pdk test unit
