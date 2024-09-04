@@ -34,8 +34,10 @@ jobs:
       - name: pdk-validate
         run: pdk validate --format=text:output.out;
 
-      - name: show pdk vallidate results
+      - name: show pdk vallidate errors
+        if: failure()
         run: cat output.out
 
       - name: pdk-test-unit
+        if: success()
         run: pdk test unit
